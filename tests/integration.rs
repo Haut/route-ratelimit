@@ -6,8 +6,8 @@
 use http::Method;
 use reqwest_middleware::ClientBuilder;
 use route_ratelimit::{RateLimitMiddleware, ThrottleBehavior};
-use std::sync::atomic::{AtomicUsize, Ordering};
 use std::sync::Arc;
+use std::sync::atomic::{AtomicUsize, Ordering};
 use std::time::{Duration, Instant};
 use wiremock::matchers::{method, path};
 use wiremock::{Mock, MockServer, ResponseTemplate};
